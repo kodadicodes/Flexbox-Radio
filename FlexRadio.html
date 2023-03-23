@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Radio</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .container{
+            width: 400px;
+            height: 150px;
+            background-color: darkgray;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+        }
+        .btn-container{
+           display: flex;
+           justify-content: center;
+           align-items: center;
+        }       
+        .btn-container div{
+            margin: 10px;
+        }
+        .progress-container{
+            display: flex;
+            justify-content: space-evenly;
+        
+        }
+        .prev{
+            width: 30px;
+            height: 30px;
+            background-color: red;
+            border-radius: 50%;
+        }
+        .pause{
+            width: 35px;
+            height: 35px;
+            background-color: red;
+            border-radius: 50%;
+        }
+        .next{
+            width: 30px;
+            height: 30px;
+            background-color: red;
+            border-radius: 50%;
+        }
+        .progress{
+            margin-top: 5px;
+            width: 70%;
+            height: 8px;
+            background-color: white;
+            border-radius: 20px;
+        }
+        .progress-bar{
+            width: 25%;
+            height: 100%;
+            background-color: orange;
+            border-radius: 5px;
+        }
+ 
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="btn-container">
+            <div class="prev"></div>
+            <div class="pause"></div>
+            <div class="next"></div>
+        </div>
+        <div class="progress-container">
+            <div class="now">00.52</div>
+            <div class="progress">
+                <div class="progress-bar"></div>
+            </div>
+            <div class="full">03.19</div>
+        </div>
+    </div>
+</body>
+</html>
